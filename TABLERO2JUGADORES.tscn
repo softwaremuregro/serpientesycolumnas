@@ -1,0 +1,516 @@
+[gd_scene format=3 uid="uid://o5yowedjy3h3"]
+
+[ext_resource type="Script" uid="uid://dlb5ybpc5382a" path="res://tablero_2jugadores.gd" id="1_dyda0"]
+[ext_resource type="Texture2D" uid="uid://ogn112qxqvas" path="res://FONDO.jpeg" id="1_hri5n"]
+[ext_resource type="Texture2D" uid="uid://qijh2l34jp56" path="res://boton2.png" id="2_dyda0"]
+[ext_resource type="Texture2D" uid="uid://x8b8rr8kfcjx" path="res://botondesactivado.png" id="3_i2jay"]
+[ext_resource type="Script" uid="uid://jy3jqx5dwl6m" path="res://btn_lanzar_dado_2jugadores.gd" id="4_hri5n"]
+[ext_resource type="Texture2D" uid="uid://do1clu8oi5mg1" path="res://dado2.png" id="5_sox0s"]
+[ext_resource type="Texture2D" uid="uid://dpqntakisa4ng" path="res://dado3.png" id="6_6y87b"]
+[ext_resource type="Texture2D" uid="uid://c5kk6533kovv5" path="res://dado6.png" id="7_a6gpp"]
+[ext_resource type="Texture2D" uid="uid://cljdg3nl0sh4p" path="res://dado4.png" id="8_5uern"]
+[ext_resource type="Texture2D" uid="uid://dvcf13wa2krfq" path="res://dado5.png" id="9_4m1bk"]
+[ext_resource type="Texture2D" uid="uid://cbjvtkffxc71c" path="res://dado1.png" id="10_jhutf"]
+[ext_resource type="Texture2D" uid="uid://ku2xfiwbmhod" path="res://jugador6.png" id="11_ekrqp"]
+[ext_resource type="Texture2D" uid="uid://dxeavany0fual" path="res://jugador9.png" id="12_wffh5"]
+[ext_resource type="Theme" uid="uid://f37surhiwpp6" path="res://inputstheme.tres" id="14_i2jay"]
+[ext_resource type="Texture2D" uid="uid://cru73fc3mvhx5" path="res://btn_atras.png" id="15_sox0s"]
+[ext_resource type="Texture2D" uid="uid://bt55wpcdx4r5m" path="res://btn_reiniciar.png" id="16_6y87b"]
+[ext_resource type="Texture2D" uid="uid://bsry2e7op3ct7" path="res://btn_pantallacompleta.png" id="17_a6gpp"]
+[ext_resource type="Texture2D" uid="uid://bdddpqxhs5et5" path="res://btn_salirpantallacompleta.png" id="18_5uern"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h1qsa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}],
+"loop": false,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}],
+"loop": false,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}],
+"loop": false,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}],
+"loop": false,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}],
+"loop": false,
+"name": &"5",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_6y87b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_jhutf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_sox0s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5uern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_4m1bk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_a6gpp")
+}],
+"loop": false,
+"name": &"6",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_dyda0"]
+paragraph_spacing = 2.0
+font_size = 52
+font_color = Color(0.95686275, 0.7490196, 0, 1)
+
+[node name="Node2D" type="Node2D" unique_id=517340900]
+script = ExtResource("1_dyda0")
+
+[node name="Fondo" type="Sprite2D" parent="." unique_id=1305158905]
+position = Vector2(1295, 536.5)
+scale = Vector2(0.9859375, 0.83515626)
+texture = ExtResource("1_hri5n")
+
+[node name="BotonLanzarDado" type="TextureButton" parent="." unique_id=1299990323]
+offset_left = 41.0
+offset_right = 553.0
+offset_bottom = 512.0
+texture_normal = ExtResource("2_dyda0")
+texture_disabled = ExtResource("3_i2jay")
+stretch_mode = 5
+script = ExtResource("4_hri5n")
+
+[node name="Dado" type="AnimatedSprite2D" parent="." unique_id=466011881]
+position = Vector2(294.81244, 252.00002)
+scale = Vector2(0.32104507, 0.3203125)
+sprite_frames = SubResource("SpriteFrames_h1qsa")
+animation = &"1"
+
+[node name="Jugador2" type="Sprite2D" parent="." unique_id=652321990]
+position = Vector2(696.0001, 921.99976)
+scale = Vector2(0.22341771, 0.19125475)
+texture = ExtResource("11_ekrqp")
+
+[node name="Jugador1" type="Sprite2D" parent="." unique_id=1385608764]
+position = Vector2(765.00006, 923.9999)
+scale = Vector2(0.23934905, 0.20311636)
+texture = ExtResource("12_wffh5")
+
+[node name="Camino" type="Node2D" parent="." unique_id=1889524057]
+
+[node name="1" type="Marker2D" parent="Camino" unique_id=101072353]
+position = Vector2(875, 915)
+
+[node name="2" type="Marker2D" parent="Camino" unique_id=1593177405]
+position = Vector2(1046, 915)
+
+[node name="3" type="Marker2D" parent="Camino" unique_id=2044830537]
+position = Vector2(1211, 921)
+
+[node name="4" type="Marker2D" parent="Camino" unique_id=1477026159]
+position = Vector2(1363, 914)
+
+[node name="5" type="Marker2D" parent="Camino" unique_id=1956744205]
+position = Vector2(1541, 918)
+
+[node name="6" type="Marker2D" parent="Camino" unique_id=1679685122]
+position = Vector2(1706, 922)
+
+[node name="7" type="Marker2D" parent="Camino" unique_id=291300294]
+position = Vector2(1714, 760)
+
+[node name="8" type="Marker2D" parent="Camino" unique_id=1063374888]
+position = Vector2(1533, 776)
+
+[node name="9" type="Marker2D" parent="Camino" unique_id=1464631906]
+position = Vector2(1367, 768)
+
+[node name="10" type="Marker2D" parent="Camino" unique_id=1402966664]
+position = Vector2(1200, 762)
+
+[node name="11" type="Marker2D" parent="Camino" unique_id=1789055211]
+position = Vector2(1026, 769)
+
+[node name="12" type="Marker2D" parent="Camino" unique_id=1903557112]
+position = Vector2(839, 775)
+
+[node name="13" type="Marker2D" parent="Camino" unique_id=1983355298]
+position = Vector2(849, 625)
+
+[node name="14" type="Marker2D" parent="Camino" unique_id=1198819051]
+position = Vector2(1019, 615)
+
+[node name="15" type="Marker2D" parent="Camino" unique_id=1277137573]
+position = Vector2(1199, 622)
+
+[node name="16" type="Marker2D" parent="Camino" unique_id=1973605668]
+position = Vector2(1370, 626)
+
+[node name="17" type="Marker2D" parent="Camino" unique_id=666967717]
+position = Vector2(1546, 626)
+
+[node name="18" type="Marker2D" parent="Camino" unique_id=1693895043]
+position = Vector2(1721, 624)
+
+[node name="19" type="Marker2D" parent="Camino" unique_id=1084209898]
+position = Vector2(1715, 472)
+
+[node name="20" type="Marker2D" parent="Camino" unique_id=96878399]
+position = Vector2(1541, 475)
+
+[node name="21" type="Marker2D" parent="Camino" unique_id=1105541036]
+position = Vector2(1373, 478)
+
+[node name="22" type="Marker2D" parent="Camino" unique_id=820953625]
+position = Vector2(1215, 464)
+
+[node name="23" type="Marker2D" parent="Camino" unique_id=1164258656]
+position = Vector2(1022, 478)
+
+[node name="24" type="Marker2D" parent="Camino" unique_id=1049918914]
+position = Vector2(856, 478)
+
+[node name="25" type="Marker2D" parent="Camino" unique_id=73156368]
+position = Vector2(842, 345)
+
+[node name="26" type="Marker2D" parent="Camino" unique_id=7575005]
+position = Vector2(1027, 342)
+
+[node name="27" type="Marker2D" parent="Camino" unique_id=1038435324]
+position = Vector2(1196, 334)
+
+[node name="28" type="Marker2D" parent="Camino" unique_id=398146072]
+position = Vector2(1378, 326)
+
+[node name="29" type="Marker2D" parent="Camino" unique_id=455967725]
+position = Vector2(1547, 342)
+
+[node name="30" type="Marker2D" parent="Camino" unique_id=1591362653]
+position = Vector2(1712, 334)
+
+[node name="31" type="Marker2D" parent="Camino" unique_id=362213296]
+position = Vector2(1715, 202)
+
+[node name="32" type="Marker2D" parent="Camino" unique_id=31100019]
+position = Vector2(1533, 191)
+
+[node name="33" type="Marker2D" parent="Camino" unique_id=1721736320]
+position = Vector2(1386, 180)
+
+[node name="34" type="Marker2D" parent="Camino" unique_id=471505040]
+position = Vector2(1196, 193)
+
+[node name="35" type="Marker2D" parent="Camino" unique_id=1538976171]
+position = Vector2(1036, 188)
+
+[node name="36" type="Marker2D" parent="Camino" unique_id=340629068]
+position = Vector2(848, 191)
+
+[node name="lblTurno" type="Label" parent="." unique_id=59494012]
+offset_left = 8.0
+offset_top = 68.0
+offset_right = 674.0
+offset_bottom = 196.0
+text = "TURNO DE "
+label_settings = SubResource("LabelSettings_dyda0")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1203611674]
+
+[node name="PanelNombres" type="Panel" parent="CanvasLayer" unique_id=667380107]
+visible = false
+offset_left = 473.0
+offset_top = 226.0
+offset_right = 1455.0
+offset_bottom = 869.0
+
+[node name="InputJ1" type="LineEdit" parent="CanvasLayer/PanelNombres" unique_id=893130268]
+layout_mode = 0
+offset_left = 98.0
+offset_top = 54.0
+offset_right = 893.0
+offset_bottom = 227.0
+theme = ExtResource("14_i2jay")
+theme_override_font_sizes/font_size = 46
+placeholder_text = "Escribe el nombre del Jugador 1"
+
+[node name="InputJ2" type="LineEdit" parent="CanvasLayer/PanelNombres" unique_id=577021582]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 250.0
+offset_right = 891.0
+offset_bottom = 423.0
+theme = ExtResource("14_i2jay")
+theme_override_font_sizes/font_size = 47
+placeholder_text = "Escribe el nombre del Jugador 2:"
+
+[node name="Button" type="Button" parent="CanvasLayer/PanelNombres" unique_id=2034175609]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 465.0
+offset_right = 776.0
+offset_bottom = 586.0
+theme_override_font_sizes/font_size = 42
+text = "Comenzar Juego"
+
+[node name="imagenInformativa" type="Sprite2D" parent="." unique_id=139436891]
+position = Vector2(550, 896)
+scale = Vector2(0.62231594, 0.3398388)
+
+[node name="lblTitulo" type="Label" parent="." unique_id=842140420]
+offset_left = -2.0
+offset_top = 719.0
+offset_right = 482.0
+offset_bottom = 829.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
+[node name="lblInformacion" type="Label" parent="." unique_id=743075575]
+offset_left = 20.0
+offset_top = 776.0
+offset_right = 449.0
+offset_bottom = 1118.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="btn_atras" type="TextureButton" parent="." unique_id=1993582193]
+offset_left = 11.0
+offset_top = -0.99999964
+offset_right = 767.0
+offset_bottom = 755.0
+scale = Vector2(0.12133696, 0.10562773)
+texture_normal = ExtResource("15_sox0s")
+
+[node name="btn_reiniciar" type="TextureButton" parent="." unique_id=1235250625]
+offset_left = 107.0
+offset_top = -2.0
+offset_right = 863.0
+offset_bottom = 754.0
+scale = Vector2(0.13516715, 0.11103713)
+texture_normal = ExtResource("16_6y87b")
+
+[node name="imagenInformativa2" type="Sprite2D" parent="." unique_id=38659295]
+position = Vector2(570, 540)
+scale = Vector2(0.62231594, 0.3398388)
+
+[node name="lblTitulo2" type="Label" parent="." unique_id=759072019]
+offset_left = 5.0
+offset_top = 379.0
+offset_right = 489.0
+offset_bottom = 429.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+
+[node name="lblInformacion2" type="Label" parent="." unique_id=993206038]
+offset_left = 12.0
+offset_top = 418.0
+offset_right = 441.0
+offset_bottom = 685.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 20
+
+[node name="btn_pantallacompleta" type="TextureButton" parent="." unique_id=1285300859]
+custom_minimum_size = Vector2(25, 25)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 213.00002
+offset_top = 1.0000001
+offset_right = 638.0
+offset_bottom = 430.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = -6.2831855
+scale = Vector2(0.20031196, 0.18478043)
+tooltip_text = "Pantalla Completa"
+texture_normal = ExtResource("17_a6gpp")
+
+[node name="btn_salirpantallacompleta" type="TextureButton" parent="." unique_id=1327237326]
+offset_left = 305.00003
+offset_top = 2.0
+offset_right = 727.0
+offset_bottom = 423.0
+scale = Vector2(0.2188669, 0.19007109)
+tooltip_text = "Salir de Pantalla Completa"
+texture_normal = ExtResource("18_5uern")
+
+[connection signal="ready" from="." to="." method="_on_ready"]
+[connection signal="pressed" from="BotonLanzarDado" to="BotonLanzarDado" method="_on_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelNombres/Button" to="." method="_on_comenzar_juego"]
+[connection signal="pressed" from="btn_atras" to="." method="_on_btn_atras_pressed"]
+[connection signal="pressed" from="btn_reiniciar" to="." method="_on_btn_reiniciar_pressed"]
+[connection signal="pressed" from="btn_pantallacompleta" to="." method="_on_btn_pantallacompleta_pressed"]
+[connection signal="pressed" from="btn_salirpantallacompleta" to="." method="_on_btn_salirpantallacompleta_pressed"]

@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://dmrgv5lfxn73g"]
+
+[ext_resource type="Script" uid="uid://bo8nwvwosgflc" path="res://menuprincipal.gd" id="1_hhf5x"]
+[ext_resource type="Script" uid="uid://bb0cpk2imvb1o" path="res://btn_jugador_museo.gd" id="2_mib8j"]
+[ext_resource type="Script" uid="uid://cw1mconmbd8qe" path="res://btn_2jugadores.gd" id="3_16425"]
+[ext_resource type="Texture2D" uid="uid://dlb508doppr41" path="res://Columna_1.png" id="4_2ety2"]
+[ext_resource type="Texture2D" uid="uid://b2weave2fbvat" path="res://portada/Serpiente_2.png" id="5_srl58"]
+[ext_resource type="Texture2D" uid="uid://bl63ymunrnifn" path="res://portada/botonjugadorvsjugador.png" id="6_o0rul"]
+[ext_resource type="Texture2D" uid="uid://cdvu0ume0jsnq" path="res://portada/botonjugadormuseo.png" id="6_srl58"]
+[ext_resource type="Texture2D" uid="uid://c18lfr3ifj01o" path="res://portada/Serpiente_4.png" id="9_gpw53"]
+[ext_resource type="Texture2D" uid="uid://mko33fhs0x3y" path="res://portada/titulo.png" id="10_hpfsw"]
+[ext_resource type="Texture2D" uid="uid://dp44qnusk1tj5" path="res://portada/Serpiente_3 (corregida).png" id="10_qw3r8"]
+[ext_resource type="Texture2D" uid="uid://dw1ggytpd8xb2" path="res://portada/logomrg.png" id="11_gpw53"]
+
+[node name="Node2D" type="Node2D" unique_id=875503155]
+script = ExtResource("1_hhf5x")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=463770147]
+offset_left = 813.0
+offset_top = 409.0
+offset_right = 1607.0
+offset_bottom = 787.0
+scale = Vector2(0.74631983, 0.73790175)
+texture_normal = ExtResource("6_srl58")
+script = ExtResource("2_mib8j")
+
+[node name="TextureButton2" type="TextureButton" parent="." unique_id=1991530529]
+offset_left = 821.0
+offset_top = 742.0
+offset_right = 1615.0
+offset_bottom = 1120.0
+scale = Vector2(0.72254753, 0.7231895)
+texture_normal = ExtResource("6_o0rul")
+script = ExtResource("3_16425")
+
+[node name="Columna" type="Sprite2D" parent="." unique_id=260700909]
+visible = false
+position = Vector2(1477.0001, 534)
+rotation = 0.22401306
+scale = Vector2(0.15096615, 0.15575719)
+texture = ExtResource("4_2ety2")
+
+[node name="Serpiente2" type="Sprite2D" parent="." unique_id=192193218]
+visible = false
+position = Vector2(-2199, 961.00006)
+scale = Vector2(0.27242857, 0.31342858)
+texture = ExtResource("5_srl58")
+
+[node name="Serpiente4" type="Sprite2D" parent="." unique_id=1327941604]
+position = Vector2(1353.0394, 435.7809)
+rotation = 1.4553145
+scale = Vector2(0.18377239, 0.2663668)
+texture = ExtResource("9_gpw53")
+
+[node name="Titulo" type="Sprite2D" parent="." unique_id=956462515]
+position = Vector2(944, 234)
+scale = Vector2(1.524635, 1.7425426)
+texture = ExtResource("10_hpfsw")
+
+[node name="Serpiente3(corregida)" type="Sprite2D" parent="." unique_id=1785785233]
+position = Vector2(215.77199, 657.3419)
+rotation = -0.09625761
+scale = Vector2(0.26670623, 0.15943374)
+texture = ExtResource("10_qw3r8")
+
+[node name="Logomrg" type="Sprite2D" parent="." unique_id=1089133052]
+position = Vector2(1820, 112)
+scale = Vector2(0.24693304, 0.23419717)
+texture = ExtResource("11_gpw53")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=553731206]
+offset_left = 479.0
+offset_top = 646.0
+offset_right = 757.0
+offset_bottom = 1559.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 21
+text = "Creditos:
+Digitalización: 
+Luis Enrique Clemente Guzmán 
+Arq.Urb. Adilene Maritza Meza Sánchez 
+Programación:
+Ing. Kevin Daniel Antúnez Ortiz
+Coordinadora Área Educativa:
+Lic. Irma García Hernández "
+fit_content = true
+
+[connection signal="ready" from="." to="." method="_ready"]
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
+[connection signal="pressed" from="TextureButton2" to="TextureButton2" method="_on_pressed"]

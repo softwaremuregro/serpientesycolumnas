@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://cip83eyx82qxy"]
+
+[ext_resource type="Script" uid="uid://cpi7rtdct2o1s" path="res://pantallaganar.gd" id="1_gnxfb"]
+[ext_resource type="Texture2D" uid="uid://qsp7wa5aqamq" path="res://mensajeganaste.png" id="2_15h7o"]
+[ext_resource type="Texture2D" uid="uid://dsevm4xpmlhmn" path="res://btn_inicio.png" id="3_c6s16"]
+[ext_resource type="Texture2D" uid="uid://gx61qh726h4s" path="res://mensajevisita.png" id="3_mbo37"]
+[ext_resource type="Texture2D" uid="uid://bt55wpcdx4r5m" path="res://btn_reiniciar.png" id="4_mbo37"]
+[ext_resource type="Script" uid="uid://igt5285crqxv" path="res://scripts/botonesreiniciar_inicio1.gd" id="5_mbo37"]
+
+[node name="Node2D" type="Node2D" unique_id=52705315]
+script = ExtResource("1_gnxfb")
+
+[node name="Mensajeganaste" type="Sprite2D" parent="." unique_id=578486419]
+position = Vector2(960.00006, 364)
+scale = Vector2(0.21378489, 0.24537036)
+texture = ExtResource("2_15h7o")
+
+[node name="Mensajevisita" type="Sprite2D" parent="." unique_id=599193326]
+position = Vector2(930, 919.00006)
+scale = Vector2(0.098281026, 0.093109295)
+texture = ExtResource("3_mbo37")
+
+[node name="btn_reiniciar" type="TextureButton" parent="." unique_id=157647331]
+offset_left = 714.0
+offset_top = 616.0
+offset_right = 1470.0
+offset_bottom = 1372.0
+scale = Vector2(0.19999886, 0.19999966)
+texture_normal = ExtResource("4_mbo37")
+script = ExtResource("5_mbo37")
+
+[node name="btn_inicio" type="TextureButton" parent="." unique_id=1410515107]
+offset_left = 1030.9996
+offset_top = 620.0
+offset_right = 1786.9996
+offset_bottom = 1376.0
+scale = Vector2(0.19999996, 0.19999999)
+texture_normal = ExtResource("3_c6s16")
+script = ExtResource("5_mbo37")
+
+[node name="Label2" type="Label" parent="." unique_id=800425860]
+offset_left = 960.0
+offset_top = 767.0
+offset_right = 1250.0
+offset_bottom = 822.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Menú Principal"
+
+[node name="Label" type="Label" parent="." unique_id=84232786]
+offset_left = 659.0
+offset_top = 764.0
+offset_right = 925.0
+offset_bottom = 819.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Volver a Jugar"
+
+[connection signal="ready" from="." to="." method="_ready"]
+[connection signal="pressed" from="btn_reiniciar" to="btn_reiniciar" method="_on_btn_reiniciar_pressed"]
+[connection signal="pressed" from="btn_inicio" to="btn_inicio" method="_on_btn_inicio_pressed"]

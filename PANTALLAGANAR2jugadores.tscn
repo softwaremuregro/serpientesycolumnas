@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cgb7wbn6idcy6"]
+
+[ext_resource type="Script" uid="uid://ye36xw01n0eg" path="res://pantallaganar_2_jugadores.gd" id="1_xw2by"]
+[ext_resource type="Texture2D" uid="uid://qsp7wa5aqamq" path="res://mensajeganaste.png" id="2_xw2by"]
+[ext_resource type="Texture2D" uid="uid://gx61qh726h4s" path="res://mensajevisita.png" id="3_r0s2l"]
+[ext_resource type="Texture2D" uid="uid://bt55wpcdx4r5m" path="res://btn_reiniciar.png" id="4_8qm67"]
+[ext_resource type="Texture2D" uid="uid://dsevm4xpmlhmn" path="res://btn_inicio.png" id="5_afcvl"]
+[ext_resource type="Script" uid="uid://4cltm0d4df7t" path="res://scripts/botonesreiniciar_inicio2.gd" id="5_xw2by"]
+
+[node name="Node2D" type="Node2D" unique_id=52705315]
+script = ExtResource("1_xw2by")
+
+[node name="Mensajeganaste" type="Sprite2D" parent="." unique_id=578486419]
+position = Vector2(960.00006, 364)
+scale = Vector2(0.21378489, 0.24537036)
+texture = ExtResource("2_xw2by")
+
+[node name="Mensajevisita" type="Sprite2D" parent="." unique_id=599193326]
+position = Vector2(929.99994, 930)
+scale = Vector2(0.098281026, 0.093109295)
+texture = ExtResource("3_r0s2l")
+
+[node name="btn_reiniciar" type="TextureButton" parent="." unique_id=157647331]
+offset_left = 721.0
+offset_top = 712.0
+offset_right = 1477.0
+offset_bottom = 1468.0
+scale = Vector2(0.19999886, 0.19999966)
+texture_normal = ExtResource("4_8qm67")
+script = ExtResource("5_xw2by")
+
+[node name="btn_inicio" type="TextureButton" parent="." unique_id=1410515107]
+offset_left = 1037.9998
+offset_top = 716.0
+offset_right = 1793.9998
+offset_bottom = 1472.0
+scale = Vector2(0.19999996, 0.19999999)
+texture_normal = ExtResource("5_afcvl")
+script = ExtResource("5_xw2by")
+
+[node name="Label2" type="Label" parent="." unique_id=800425860]
+offset_left = 967.0
+offset_top = 863.0
+offset_right = 1257.0
+offset_bottom = 918.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Menú Principal"
+
+[node name="Label" type="Label" parent="." unique_id=84232786]
+offset_left = 666.0
+offset_top = 860.0
+offset_right = 932.0
+offset_bottom = 915.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Volver a Jugar"
+
+[node name="nombreJugador" type="Label" parent="." unique_id=1289794142]
+offset_left = 155.0
+offset_top = 548.0
+offset_right = 1736.0
+offset_bottom = 726.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "Nombre"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="ready" from="." to="." method="_ready"]
+[connection signal="pressed" from="btn_reiniciar" to="btn_reiniciar" method="_on_btn_reiniciar_pressed"]
+[connection signal="pressed" from="btn_inicio" to="btn_inicio" method="_on_btn_inicio_pressed"]
